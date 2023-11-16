@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-image: url("../images/BG.png");
+    background-position: center;
+    background-size:contain;
+    height: 100%;
+}
+
+.insertmain{
+    width: 100%;
+    background-image: url("../images/BG.png");
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+
+.table {
+	width: 100%;
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#ff7300da;
+    font-weight: bolder;
+    
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+}
+
+.table-data{
+	flex: 1 1 20%;
+	text-align:center;
+    font-family:cursive;
+    font-size: 220%;
+    color:#fff
+}
+
+.header__item {
+	text-transform:uppercase;
+    flex: 1 1 20%;
+	text-align:center;
+}
+
+
+.filter__link {
+	text-decoration: none;
+    font-family: cursive;
+	position:relative;
+	display:inline-block;
+    font-size: 180%;
+    color:rgb(0, 0, 0);
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: auto;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(255, 255, 255);
+}
+.btn:focus{
+    outline: none;
+}
+
+
+.form-input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    text-indent: 15%;
+}
+
+.form-input:hover, .form-input:focus{
+    border: solid 2px var(--blue-color);
+}
+
+.input-group{
+    position: relative;
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.spacer > *{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card{
+      border-radius: 10px;
+      font-size:large;
+      box-shadow: 0 0 20px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
+      width: 50%;
+      min-width: 320px;
+      padding: 5%;
+}
+
+.cardLB{
+    border-radius: 10px;
+    font-size:large;
+    width: 80%;
+    height:100%;
+    padding: 2%;
+}
+  
+.title{
+    font-size: 200%;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    color: #ff7200;
+}
+
+.text-center{
+      text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    /*Normal Screen*/
+    .btn{
+        height:40px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    /*Login-box*/
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    } 
+}
+
+@media screen and (max-width: 830px){
+    /*For tablet*/
+    .btn{
+        height:30px;
+        width: 70px;
+    }
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /*IPAD*/
+}
+
+@media screen and (max-width: 450px){
+    /*mobile*/ 
+}

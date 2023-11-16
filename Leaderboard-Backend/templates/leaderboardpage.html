@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard System</title>
+    <link rel="stylesheet" href="{% static 'css/DBstyles.css' %}">
+</head>
+<body class="body">
+    <div class="main">
+    {% block content %}
+    <center>
+    <div class="cardLB spacer">
+        <h1 class="title text-center">LeaderBoard</h1>
+            <center>
+            <div class="table">
+                <div class="table-header">
+                    <div class="header__item"><a id="name" class="filter__link">Number</a></div>
+                    <div class="header__item"><a id="wins" class="filter__link">Name</a></div>
+                    <div class="header__item"><a id="draws" class="filter__link">Points</a></div>
+                    <div class="header__item"><a id="losses" class="filter__link">Credits</a></div>
+                </div>
+
+                <div class="table-content">	
+                {% for data in Teams %} 
+                <div class="table-row">
+                    <div class="table-data">{{ data.TeamNumber }}</div>
+                    <div class="table-data">{{ data.Name }}</div>
+                    <div class="table-data">{{ data.Points }}</div>
+                    <div class="table-data">{{ data.Credits }}</div>
+                </div>
+                {% endfor %}
+                </div>
+
+            </div>
+        </center>
+            
+        </div>
+    </div>
+    </center> 
+    {% endblock content %}
+    </div>
+</body>
+</html>

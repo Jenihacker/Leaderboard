@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard System</title>
+    <link rel="stylesheet" href="{% static 'css/DBstyles.css' %}">
+</head>
+<body class="body">
+    <div class="insertmain">
+        <div class="card center spacer">
+            <h1 class="title text-center">HOME PAGE</h1>
+        <center>
+            <button name="LeaderBoard" class="btn" type="submit" onclick="location.href='{% url "leaderboard" %}'">LeaderBoard</button></li>
+            <button name="Insert" class="btn" type="submit" onclick="location.href='{% url "Insert" %}'">Register</button></li>
+            <button name="disqualify" class="btn" type="submit" onclick="location.href='{% url "Disqualify" %}'">Disqualify</button></li>
+            <button name="Update" class="btn" type="submit" onclick="location.href='{% url "Update" %}'">Update</button></li>
+        </center>
+    </div>
+    </div>
+    </body>
+</html>
