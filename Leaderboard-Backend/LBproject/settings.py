@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wz_n*m_z$*-rzk5)ehdcs)*wdu7h*9m&o1xi30v%vj&f!q*k8j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.102','192.168.0.107']
 
 
 # Application definition
@@ -82,9 +82,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'leaderboard',
         'USER':'root',
-        'PASSWORD': 'VineethMYSQL@123',
+        'PASSWORD': '',
         'HOST':'localhost',
-        'PORT':'3307',
+        'PORT':'3306',
         'OPTIONS':{
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         }

@@ -1,5 +1,5 @@
 import './App.css'
-import LeaderboardCard from './components/LeaderboardCard'
+import LeaderboardCard from './components/LeaderboardCard';
 
 function App() {
   return (
